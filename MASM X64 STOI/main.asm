@@ -29,14 +29,14 @@ ExitProcess  proto
 
         jz loop_end
 
-                imul rax, 10
+            imul rax, 10
 
-                ;lea rax, [rax * 10]
-                lea rax, [rax+rbx-'0'] ; combines a bunch of instructions into one!
-                ;although it is often used for pointer indexing, it can be used for arithmatic!
-                ;and is faster than doing individual instructions!
-                ;multiplication only works on immidiate values though
-                inc rcx
+            ;lea rax, [rax * 10]
+            lea rax, [rax+rbx-'0'] ; combines a bunch of instructions into one!
+            ;although it is often used for pointer indexing, it can be used for arithmatic!
+            ;and is faster than doing individual instructions!
+            ;multiplication only works on immidiate values though
+            inc rcx
         jmp loop_start
     loop_end:
     mov rcx, 1 ; sucessfull termination

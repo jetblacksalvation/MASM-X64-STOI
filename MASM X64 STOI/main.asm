@@ -35,7 +35,7 @@ ExitProcess  proto
                 lea rax, [rax+rbx-'0'] ; combines a bunch of instructions into one!
                 ;although it is often used for pointer indexing, it can be used for arithmatic!
                 ;and is faster than doing individual instructions!
-                ;multiplication only works on immidiate values though
+                ;multiplication only works on immidiate values though *not* it's just really picky
                 inc rcx
         jmp loop_start
     loop_end:
